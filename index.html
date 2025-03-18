@@ -9,63 +9,32 @@
     <div id="chart"></div>
     <div id="question"><h1></h1></div>
 
-    <div class="loader">
-      <div class="loader-icon-1">&#10052;</div>
-      <div class="loader-text">Loading...</div>
-    </div>
-    <div class="main">
-      <div class="initial-snow">
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
-        <div class="snow">&#10052;</div>
+    <div id="sky">
+      <div class="theSun">
+        <div class="ray_box">
+          <div class="ray ray1"></div>
+          <div class="ray ray2"></div>
+          <div class="ray ray3"></div>
+          <div class="ray ray4"></div>
+          <div class="ray ray5"></div>
+          <div class="ray ray6"></div>
+          <div class="ray ray7"></div>
+          <div class="ray ray8"></div>
+          <div class="ray ray9"></div>
+          <div class="ray ray10"></div>
+        </div>
       </div>
+    <!-- 	<div class="cloudwrapperOne">
+        <div class="cloud c1"></div>
+      </div -->
+      <div class="cloudwrapperTwo">
+        <div class="cloud c2"></div>
+      </div>
+      <div class="cloudwrapperThree">
+        <div class="cloud c3"></div>
+      </div>
+    
+    </div>
     </div>
 
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -82,95 +51,95 @@
 
       var data = [
         {
-          label: "Найкраща!",
+          label: "Час разом!",
           value: 1,
-          question: "Моє сонце, 1 рік разом!",
+          question: "Скіки бля ми вже разом??!?!?",
         },
         {
-          label: "Важливе",
+          label: "НС",
           value: 1,
-          question: "Усміхнися, 1 рік разом!😊",
+          question: "Не сексуалізую).",
         },
         {
-          label: "Кого я любюблю і вже цілий рік разом?)",
+          label: "Моя к",
           value: 1,
-          question: "Та ЧУпікову якусь)) , 1 рік разом!",
+          question: "Моя кошкхана!)",
         },
         {
-          label: "10 цьомів від Дмитра",
+          label: "Цьомік",
           value: 1,
-          question: "💋💋💋💋💋💋💋💋💋💋",
+          question: "Надсилаєш це - з Дмитра 10 цьомів!",
         },
         {
           label: "Ти",
           value: 1,
-          question: "Ти моя найрідніша, ЯТЛ.ВБД.1РР.",
+          question: "Ти моя найрідніша, ЯТЛ.ВБД.1.2РР.",
         },
         {
           label: "Відпочинок",
           value: 1,
-          question: "Кохана, тобі час відпочити. 💕",
+          question: "А може час поспівааааати?)",
         },
         {
-          label: "Sweet",
+          label: "Гульки",
           value: 1,
-          question: "З'їж трошки солоденького, сонце. 😊",
+          question: "Не забувай гуляти, коли вільна!)",
         },
         {
-          label: "Smile",
+          label: "Пиво",
           value: 1,
-          question: "Відчуваю, що тобі треба усміхнутися 😉",
+          question: "Якщо ти це бачиш, тверезою не приходи)).",
         },
         {
           label: "Велика перемога",
           value: 1,
-          question: "Ми переможемо наші загони. 😍",
+          question: "Наші загони нам не перепони!",
         },
         {
           label: "Льося",
           value: 1,
-          question: "Льося хольося, 1 рік разом!",
+          question: "Льось, більше 1 року разом!",
         },
         {
           label: "Ти",
           value: 1,
-          question: "Ти моя найрідніша. 😍",
+          question: "Найкраща!",
         },
         {
           label: "Випадкове нагадування",
           value: 1,
-          question: "Не сумуй. 😊",
+          question: "Ти прекрасна!",
         },
         {
           label: "Краса",
           value: 1,
           question:
-            "Для прекрасної дівчини, прекрасні слова - ти найпрекрасніша!",
+            "Навіть не думай про те, щоб себе чмирити!",
         },
         {
           label: "PeooWiooWe",
           value: 1,
-          question: "Чиє піувіуві немає меж?), уже цілий рік!",
+          question: "ДЕ ТВОЄ ПІУВІУВІУВІ???",
         },
         {
           label: "Обійми",
           value: 1,
-          question: "Обіймемось? 🤗Утютюша, цілий рік разом",  
+          question: "З тебе фото в лінзах).",  
         },
         {
           label: "Я люблю тебе).",
           value: 1,
-          question: "Так, я справді кошкхаю тебе, моя найрідніша і ми вже цілий рік разом!",
+          question: "Фронт мен усміхається тобі).",
         },
         {
           label: "Хто холося дівка?)",
           value: 1,
-          question: "ЯТЛ.ВБД.1РР.",
+          question: "Ти холося дівка).",
         },
         {
           label: "Диво",
           value: 1,
-          question: "Кошеня моє, не тривожся ніколи.",
+          question: "Діти в маму - що вона прекрасна, що вони.",
         },
         {
           label: "Мяу",
@@ -180,12 +149,12 @@
         {
           label: "Усмішка",
           value: 1,
-          question: "ЯТЛ.ВБД.1РР.",
+          question: "Усміхнися, мила).",
         },
         {
           label: "Ми",
           value: 1,
-          question: "Не я, не ти, а МИ, рік разом!",
+          question: "У нас є ми!",
         },
         {
           label: "Ми",
@@ -200,7 +169,7 @@
         {
           label: "Яскрава",
           value: 1,
-          question: "Ти яскрава немов сонце. 🌞🌞🌞",
+          question: "Моя перлинка. 💞💞",
         },
         {
           label: "Таємниця",
@@ -225,12 +194,12 @@
         {
           label: "Таємниця",
           value: 1,
-          question: "1 рік разом, швидко час летить. )",
+          question: "Що ти серйозна така, ану усміхнися!",
         }, 
         {
-          label: "ЯТЛ.ВБД.1РР.",
+          label: ".",
           value: 1,
-          question: "ЯТЛ.ВБД.1РР.",
+          question: "ЯТЛ.ВБД.1.2РР.",
         }, 
       ];
 
