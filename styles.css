@@ -4,13 +4,13 @@ text {
   pointer-events: none;
 }
 
-body {
-	background-size: cover;
+/* body { */
+	/* background-size: cover;
   background-repeat: no-repeat; 
   width: 100vw;
   height: 100vh;
-  margin: 0;
-}
+  margin: 0; */
+/* } */
 
 h1 {
   color: white;
@@ -57,9 +57,6 @@ html {
 
 body {
 	animation: skyChange 60s linear infinite;
-	background: deepskyblue;
-	background-size: 100% 100%;
-  background-repeat: no-repeat; 
 	width: 100vw;
 	height: 100vh;
 }
